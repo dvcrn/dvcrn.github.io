@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "A new blog"
+date:   2015-10-11 11:39:46
+categories: update
+---
+
+I decided to create another simple blog based on jekyll next to my [medium one](https://medium.com/@davidmohl). Why? let me explain.
+
+Medium is an amazing platform for __writing__. That's what works really damn good on it. But writing doesn't equal blog. Medium is a magazine - a collection of articles and columns from individual writers. When you see a post about 'How to set up php' with a big editorial picture and a ton of quotes, don't you also think that it kind of feels... out of place?  
+
+Medium will be the place where I'll write thought through stuff. Stuff that could go into a magazine. On jekyll (here) on the other hand, I can write anything that is somehow tech related:
+
+- Some guide for a new technology? Here. 
+- A article on how to work productively? Medium.
+- A post on workflow thoughts? Medium.
+- Code snippets how to set up one of my projects? Here.
+- My thoughts on a certain technology? Here.
+- Common mistakes companies make? Medium.
+
+... you get the drill right? And in general, if you subscribe through RSS it doesn't really matter where the articles come from.
+
+Now there's just the problem that I really don't blog much in general...
