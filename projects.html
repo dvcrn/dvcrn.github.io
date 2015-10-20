@@ -1,0 +1,50 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Projects</h1>
+
+  <p>
+    These are some projects I am working on or have worked on in the past. Everything that <strong>I</strong> consider a project can be listed here.
+  </p>
+
+  <ul class="post-list">
+    <h2>Active Projects</h2>
+    {% for project in site.projects %}
+        {% if project[1].active %}
+        <li>
+            <span class="post-meta">{{ project[1].date | date: "%b %Y" }}</span>
+            <h2>
+            <a class="post-link" href="{{ project[1].url }}">{{ project[1].title }}</a>
+            </h2>
+
+            <i>
+            - {{project[1].description}}
+            </i>
+        </li>
+        {% endif %}
+    {% endfor %}
+
+    <p>&nbsp;</p>
+
+    <h2>Inactive Projects</h2>
+    {% for project in site.projects %}
+        {% if project[1].active == false %}
+        <li>
+            <span class="post-meta">{{ project[1].date | date: "%b %Y" }}</span>
+            <h2>
+            <a class="post-link" href="{{ project[1].url }}">{{ project[1].title }}</a>
+            </h2>
+
+            <i>
+            - {{project[1].description}}
+            </i>
+        </li>
+        {% endif %}
+    {% endfor %}
+  </ul>
+</div>

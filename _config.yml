@@ -10,3 +10,53 @@ github_username:  dvcrn
 
 # Build settings
 markdown: kramdown
+
+projects:
+  dmedit:
+    title: "dmedit"
+    description: "GFM markdown editor written in om and electron"
+    url: "https://github.com/dvcrn/dmedit"
+    date: "2015-10-21"
+    active: true
+
+  sublimious:
+    title: "sublimious"
+    description: "spacemacs inspired and VIM focused config kit for sublime text"
+    url: "https://github.com/dvcrn/sublimious"
+    date: "2015-09-20"
+    active: true
+
+  exkit:
+    title: "exkit"
+    description: "framework for writing cross browser extensions"
+    url: "https://github.com/dvcrn/exkit"
+    date: "2015-07-05"
+    active: true
+
+  proxmate-next:
+    title: "proxmate next"
+    description: "rewritten version of ProxMate in modular coffeescript. Allows installation of modular 'proxy packages' available on proxmate.me"
+    url: "https://github.com/dvcrn/proxmate-chrome"
+    date: "2014-08-06"
+    active: false
+
+  proxmate:
+    title: "proxmate"
+    description: "cross browser proxy extension for unblocking websites. peaked with 500k users"
+    url: "https://proxmate.me"
+    date: "2013-09-20"
+    active: false
+
+  friendtrackr:
+    title: "facebook friendtrackr"
+    description: "facebook app for finding people that deleted/added the user"
+    url: "https://github.com/dvcrn/facebook-friendtracker"
+    date: "2013-12-19"
+    active: false
+    
+  moody:
+    title: "Moody"
+    description: "osx app to use the current spotify song as skype mood"
+    url: "https://github.com/dvcrn/Moody"
+    date: "2012-03-01"
+    active: true
