@@ -42,4 +42,4 @@ There's not much to it yet. You can save files, open files and - well - write ma
 [11]: https://github.com/dvcrn/markright
 
 [6]: https://raw.githubusercontent.com/dvcrn/dmedit/master/resources/markright-banner.png
-[10]: /markright.png
+[10]: /images/markright.png
