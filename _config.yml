@@ -12,10 +12,10 @@ github_username:  dvcrn
 markdown: kramdown
 
 projects:
-  dmedit:
-    title: "dmedit"
-    description: "GFM markdown editor written in om and electron"
-    url: "https://github.com/dvcrn/dmedit"
+  markright:
+    title: "MarkRight"
+    description: "Markdown editor written in om and electron"
+    url: "https://github.com/dvcrn/markright"
     date: "2015-10-21"
     active: true
 
