@@ -17,9 +17,9 @@ With [next][1] around the corner I decided to give it a try with react native. [
 
 ### A stoney path
 
-At first the problem was that om.next changes the rendering process. Instead of calling `React.render`, it relies on React 0.14 which splits the rendering logic from the component. Here we're calling `ReactDOM.render` instead, which, well, relies on a DOM. 
+After poking a bit around with next and natal, I quickly ran into a deadend because of it's dependency to `gdom` and `ReactDOM`. Instead of calling `React.render`, om.next relies on React 0.14 which splits the rendering logic from the component. Here we're calling `ReactDOM.render` instead, which, well, relies on a DOM. 
 
-Luckily after a short chat with [@dnolen][5] he promptly stripped out `ReactDOM` (and `gdom` as well) which allows us to pass a `:root-render` and `:root-unmount` function into the reconciler. Whatever we specify here will get used to render and unmount components. 
+Luckily after a short chat with [@dnolen][5] he promptly stripped out `ReactDOM` (and `gdom` as well) and added functionality that allows us to pass a `:root-render` and `:root-unmount` function into the reconciler. Whatever we specify here will get used to render and unmount components. 
 
 Reading through the [react native source][6] made it clear that 0.14 has not been adapted yet and the rendering and unmounting logic is still inside `React`. To plug this into om.next, all we have to do is
 
@@ -97,6 +97,8 @@ The full code looks something like this:
 ```
 
 [I submitted a PR][8] to natal and once that's merged in, all you have to do is `natal init` :)
+
+Can you believe that all of this happened in just 1.5 days?
 
 [1]: https://github.com/omcljs/om
 [2]: http://cljsrn.org/
