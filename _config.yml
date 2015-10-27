@@ -11,6 +11,9 @@ github_username:  dvcrn
 # Build settings
 markdown: kramdown
 
+kramdown:
+  input: GFM
+
 projects:
   markright:
     title: "MarkRight"
