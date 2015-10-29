@@ -7,7 +7,7 @@ categories:
 - react
 ---
 
-I mentioned already earlier that I believe [om.next][1] will be the future. Not particular om itself but the idea it implements: data driven applications. The component declares what data it needs and the server is just there for delivering it. Components don't want to coordinate 20 ajax requests just to gather all the data they need to operate. Components also don't need all of the data your API provides in most cases, so why even the need to download all of it? 
+I mentioned already earlier that I believe [om.next][1] will be the future. Not particular om itself but the idea it implements: demand driven applications. The component declares what data it needs and the server is just there for delivering it. Components don't want to coordinate 20 ajax requests just to gather all the data they need to operate. Components also don't need all of the data your API provides in most cases, so why even the need to download all of it? 
 
 These concepts make sense as the next iteration of server / client architectures but you know where they fit even better? __Mobile Apps!__
 
