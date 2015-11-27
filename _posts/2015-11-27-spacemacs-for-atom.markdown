@@ -6,7 +6,7 @@ categories:
 - clojurescript
 ---
 
-If you read my last posts you might notice that I really like editors. There is something about finding better and better tools is very interesting and fun. Plus using a new tool for a couple of weeks is keeping things super fresh!
+If you read my last posts you might notice that I really like editors. Something about finding better and better tools is very interesting and fun. Plus using a new tool for a couple of weeks is keeping things fresh and new even if you work on the same code.
 
 The problem is that since I started using [spacemacs](http://dvcrn.github.io/2015/10/13/my_dream_editor.html), I can't really use anything else. It just... doesn't work. The shortcuts are too awkward, get overriden by third party plugins and all the manual config orchestration is just a pain. 
 
@@ -41,7 +41,7 @@ Take this snippet for example:
 @eventElement.dispatchEvent(new CustomEvent(name, bubbles: true, cancelable: true))
 ```
 
-What is it doing? Why do some of the arguments have colons? Where does the object start and where does it end? 
+What is it doing? Why do some of the arguments have colons? Where does the object start and where does it end? The constructor is getting 3 arguments, right? Right?
 
 I literally had to run this through a coffeescript parser to get what it's doing:
 
@@ -54,10 +54,10 @@ I literally had to run this through a coffeescript parser to get what it's doing
 
 ##### objects everywhere
 
-I'm a big functional guy and everywhere I go in the atom sourcecode, I am dealing with objects after objects. I can't count how many `@element` assignments and reads I saw. Some things are getting assigned at the top, used at the bottom and changed 3x until that spot.
+I'm a big functional guy and everywhere I go in the atom sourcecode, I am dealing with objects after objects. I can't count how many `@element` assignments and reads I saw. Some things are getting assigned at the top of an object, used at the bottom and changed 3x until it reached that spot.
 
 ##### cson
-For some reason someone also decided that coffeescript is so great that we should also write json in coffeescript! Because... commas are evil or something. Oh boy. 
+For some reason someone decided that coffeescript is so great that we should also start writing json in coffeescript! Because... commas are evil or something. Oh boy. 
 
 
 I quickly ran away from it 
@@ -72,9 +72,9 @@ Our clojurescript plugin could literally change how every other package reacts: 
 
 Short said, in the last few days I started porting a good chunk of functionality from sublimious to atom. 
 
-![demo](../images/proton-demo.gif)
+![demo](/images/proton-demo.gif)
 
-For sublimious, I did __a lot of hacking__. I basically collected all the configuration and flushed it into hardware files that are then getting re-loaded by sublimetext. For atom, I don't need to do that. 
+For sublimious, I did __a lot of hacking__. I basically collected all the configuration and flushed it into real files that are then getting re-loaded by sublimetext. For atom, I don't need to do that. 
 
 How do I set a editor config? Like this!
 
@@ -90,7 +90,7 @@ How do I wipe the existing user config so it doesn't conflict with our new one? 
 
 ```
 
-The only hack I had to implement is the ability to install packages from a package. That's not possible. Here's how I did it anyway:
+The only hack I had to implement is the ability to install packages from within a package. That's currently not possible. Here's how I did it anyway:
 
 ```clj
 (defn install-package [package-name]
@@ -108,6 +108,6 @@ The only hack I had to implement is the ability to install packages from a packa
 
 ### Is it ready?
 
-Not even close but I am already a lot more happy with it than with sublimious before. It feels more... powerful! Maybe cljs+atom can really be a alternative to emacs at some point. Let me dream 😊
+Not even close to but I am already a lot more happy with it than with sublimious before. It feels more... powerful! Maybe cljs+atom can really be a alternative to emacs at some point. Let me dream 😊
 
-In the meantime, if you want to help, please check it out [here].(https://github.com/dvcrn/proton)
+In the meantime, if you want to help, please check it out [here](https://github.com/dvcrn/proton).
