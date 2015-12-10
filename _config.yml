@@ -17,16 +17,23 @@ kramdown:
 projects:
   markright:
     title: "MarkRight"
-    description: "Markdown editor written in om and electron"
+    description: "Markdown editor written in clojurescript, om and electron"
     url: "https://github.com/dvcrn/markright"
     date: "2015-10-21"
     active: true
 
   sublimious:
     title: "sublimious"
-    description: "spacemacs inspired and VIM focused config kit for sublime text"
+    description: "spacemacs inspired config system for sublime text written in python"
     url: "https://github.com/dvcrn/sublimious"
     date: "2015-09-20"
+    active: true
+
+  proton:
+    title: "proton"
+    description: "spacemacs inspired configuration system for atom written in clojurescript"
+    url: "https://github.com/dvcrn/proton"
+    date: "2015-11-25"
     active: true
 
   exkit:
@@ -56,7 +63,7 @@ projects:
     url: "https://github.com/dvcrn/facebook-friendtracker"
     date: "2013-12-19"
     active: false
-    
+
   moody:
     title: "Moody"
     description: "osx app to use the current spotify song as skype mood"
