@@ -71,7 +71,7 @@ Let’s go back to my image upload and resize example: In django I would take th
 
 Now elixir. I take the image, put it on the disk and push the original to s3. I tell the user “success” but at the _same time_ spin up a child process with the reference to image on the disk. The user gets his “success” but the child process lives on! It does it’s resizing stuff, uploads to s3, updates the db and if something goes wrong like a timeout from s3, then so what? It just crashes, the supervisor restarts the process and it tries again. All while the user is already gone! Without a queue! Without a worker! Out of the box!
 
-To give that more context, on heroku with django I would have to scale up another worker process (costs $$), add a amqp server (even more $$) and let everything run at the same time. On heroku with elixir I can literally have all of that inside a free dyno! I could even spin up 50 worker processes and it could still run inside the same free dyno without a cent extra if I am nice with memory.
+To give that more context, on heroku with django I would have to scale up another worker process (costs $), add a amqp server (even more $) and let everything run at the same time. On heroku with elixir I can literally have all of that inside a free dyno! I could even spin up 50 worker processes and it could still run inside the same free dyno without a cent extra if I am nice with memory.
 
 And you know actually how easy it is to spawn a simple child process?
 
