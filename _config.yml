@@ -15,6 +15,13 @@ kramdown:
   input: GFM
 
 projects:
+  helium:
+    title: "Helium"
+    description: "Social music app with a realtime backend written in Elixir / Phoenix"
+    url: "http://www.playhelium.com"
+    date: "2016-04-01"
+    active: true
+
   markright:
     title: "MarkRight"
     description: "Markdown editor written in clojurescript, om and electron"
@@ -41,7 +48,7 @@ projects:
     description: "framework for writing cross browser extensions"
     url: "https://github.com/dvcrn/exkit"
     date: "2015-07-05"
-    active: true
+    active: false
 
   proxmate-next:
     title: "proxmate next"
